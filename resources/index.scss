@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    border: 0;
+    outline: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fff;
+    font-family: sunflower
+  }
+  
+  button {
+    background-color: inherit;
+    border: none;
+    outline: 0
+  }
+  
+  .slideshow {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none
+  }
+  
+  .slideshow ::-webkit-scrollbar {
+    display: none
+  }
+  
+  .slideshow .slide {
+    display: inline-block;
+    vertical-align: top;
+    scroll-snap-align: start;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+  }
+  
+  #record-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+  }
+  
+  #record-container #record-panel {
+    width: 100%;
+    height: calc(100% - 4rem);
+    white-space: nowrap;
+    word-wrap: break-word;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    background-color: #c5c5c525
+  }
+  
+  #record-container #record-panel .panel {
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    scroll-snap-align: start
+  }
+  
+  #record-container #record-panel .panel .panel-container {
+    display: block;
+    width: 100%;
+    height: 100%
+  }
+  
+  #record-container #record-panel .panel .top-bar-tall {
+    display: block;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: grey;
+    color: #fff;
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .1)
+  }
+  
+  #record-container #record-panel .panel .scroll-list {
+    display: block;
+    height: 40%;
+    width: 100%;
+    margin-top: 10vw
+  }
+  
+  #record-container #record-panel .panel .points {
+    font-family: Supermercado One;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, .25);
+    margin-top: 10vw;
+    margin-bottom: 10vw
+  }
+  
+  #record-container #record-panel .panel .points h2 {
+    font-size: 3rem;
+    margin: 0 4px 0 0
+  }
+  
+  #record-container #record-panel .panel .points h3 {
+    font-size: 4rem;
+    margin: 0 4px 0 0
+  }
+  
+  #record-container #record-panel .panel .points p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem
+  }
+  
+  #record-container #record-panel .panel .top-title {
+    font-family: Supermercado One;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, .25);
+    margin: 1rem;
+    font-size: 2rem
+  }
+  
+  #record-container #record-panel .panel .table3x7 {
+    width: 100%;
+    max-height: 100%;
+    white-space: normal
+  }
+  
+  #record-container #record-panel .panel .table3x7 div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50vw 50vw;
+    grid-template-columns: 50vw 50vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content
+  }
+  
+  #record-container #record-panel .panel .table3x7 .header {
+    text-align: left;
+    color: #626262;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    border-bottom: 2px solid #dadada
+  }
+  
+  #record-container #record-panel .panel .table3x7 .header span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+  }
+  
+  #record-container #record-panel .panel .table3x7 span {
+    padding: 1rem 1.2rem 1rem 1.2rem;
+    text-align: left
+  }
+  
+  #record-container #record-panel .panel .table3x7 span span {
+    padding: 0
+  }
+  
+  #record-container #record-panel .panel .table3x7 span:first-child {
+    border-right: 2px solid #dadada
+  }
+  
+  #record-container #record-panel .panel .table3x7 span span:first-child {
+    border-right: 0
+  }
+  
+  #record-container #record-panel .panel .table3x7 .row:nth-of-type(2) span {
+    padding-top: 1rem
+  }
+  
+  #record-container #record-panel .panel .table3x7 .row:last-of-type {
+    margin-bottom: 5rem
+  }
+  
+  #record-container #record-panel .panel .table3x7 .row span {
+    padding-top: .5rem;
+    padding-bottom: .5rem
+  }
+  
+  #record-container #record-panel .panel .table3x7 .row span:first-child {
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 300;
+    color: #5e5e5e;
+    text-align: center
+  }
+  
+  #record-container #record-panel .panel .table3x7 .row span:last-child {
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 300;
+    color: #8f8f8f;
+    text-align: center
+  }
+  
+  #record-container #record-panel .panel .table3x7 .row .penalty {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+  }
+  
+  #record-container #record-panel .panel .table3x7 .row .penalty span {
+    padding: 0
+  }
+  
+  #record-container #record-panel .panel .table3x7 .row .penalty :first-child {
+    border: none;
+    margin-right: auto;
+    color: #1e1313
+  }
+  
+  #record-container #record-panel .panel .table3x7 .row .penalty :last-child {
+    color: grey
+  }
+  
+  #record-container #record-panel .panel .table3x7 .flag {
+    background-color: #fff
+  }
+  
+  #record-container #record-panel .panel .table3x7 .flag span:first-child,
+  #record-container #record-panel .panel .table3x7 .flag span:last-child {
+    color: #000
+  }
+  
+  #record-container #record-panel .panel .table65x35 {
+    width: 100%;
+    max-height: 100%;
+    white-space: normal
+  }
+  
+  #record-container #record-panel .panel .table65x35 div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 65vw 35vw;
+    grid-template-columns: 65vw 35vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content
+  }
+  
+  #record-container #record-panel .panel .table65x35 .header {
+    text-align: left;
+    color: #626262;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    border-bottom: 2px solid #dadada
+  }
+  
+  #record-container #record-panel .panel .table65x35 .header span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+  }
+  
+  #record-container #record-panel .panel .table65x35 span {
+    padding: 1rem 1.2rem 1rem 1.2rem;
+    text-align: left
+  }
+  
+  #record-container #record-panel .panel .table65x35 span span {
+    padding: 0
+  }
+  
+  #record-container #record-panel .panel .table65x35 span:first-child {
+    border-right: 2px solid #dadada
+  }
+  
+  #record-container #record-panel .panel .table65x35 span span:first-child {
+    border-right: 0
+  }
+  
+  #record-container #record-panel .panel .table65x35 .row:nth-of-type(2) span {
+    padding-top: 1rem
+  }
+  
+  #record-container #record-panel .panel .table65x35 .row:last-of-type {
+    margin-bottom: 5rem
+  }
+  
+  #record-container #record-panel .panel .table65x35 .row span {
+    padding-top: .5rem;
+    padding-bottom: .5rem
+  }
+  
+  #record-container #record-panel .panel .table65x35 .row span:first-child {
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 300;
+    color: #5e5e5e;
+    text-align: center
+  }
+  
+  #record-container #record-panel .panel .table65x35 .row span:last-child {
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 300;
+    color: #8f8f8f;
+    text-align: center
+  }
+  
+  #record-container #record-panel .panel .table65x35 .row .penalty {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+  }
+  
+  #record-container #record-panel .panel .table65x35 .row .penalty span {
+    padding: 0
+  }
+  
+  #record-container #record-panel .panel .table65x35 .row .penalty :first-child {
+    border: none;
+    margin-right: auto;
+    color: #1e1313
+  }
+  
+  #record-container #record-panel .panel .table65x35 .row .penalty :last-child {
+    color: grey
+  }
+  
+  #record-container #record-panel .panel .table65x35 .flag {
+    background-color: #fff
+  }
+  
+  #record-container #record-panel .panel .table65x35 .flag span:first-child,
+  #record-container #record-panel .panel .table65x35 .flag span:last-child {
+    color: #000
+  }
+  
+  #record-container #bottomBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: grey;
+    width: 100%;
+    height: 4rem
+  }
+  
+  #record-container #bottomBar button {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    border-left: 2px solid #f0cbcb
+  }
+  
+  #record-container #bottomBar button span {
+    font-size: 2rem;
+    color: #fff5f5
+  }
+  
+  #record-container #bottomBar button:first-Child {
+    border-left: 0
+  }
+  
+  #record-container #bottomBar button:last-Child {
+    border-right: 0
+  }

@@ -4,9 +4,244 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>South Coast - Records</title>
+
+    <link rel="stylesheet" href="resources/index.css">
+    <link rel="shortcut icon" href="resources/images/Icon.webp" type="image/x-icon">
+
+
 </head>
 <body>
+    <content id="record-container">
+
+        <div id="record-panel">
+            <span class="panel" id="scoreBoard">
+
+                <div class="panel-container">
+                    <div class="top-bar-tall" id="scoreBoard-top">
+                        <div class="slideshow" id="scoreBoard-panel">
+                            <span class="slide" id="scoreBoard-points">
+                                <center>
+                                    <div class="points">
+                                        <p>
+                                            Points:
+                                        </p>
+                                        <input type="text" id="inc" value="0" style="margin-bottom: 1rem;"></input>
+                                    </div>
+                                </center>
+                            </span><span class="slide" id="scoreBoard-clock">
+                                <center>
+                                    <div class="points">
+                                        <h3 class="time-counter">
+                                            01:32:02
+                                        </h3>
+                                    </div>
+                                </center>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="scroll-list" id="scoreBoard-bottom">
+                        <div class="table3x7" id="penalty-record-target">
+                            <div class="header">
+                                <span>
+                                    penalty
+                                </span>
+                                <span>
+                                    points given
+                                </span>
+                            </div>
+                            
+                            <template id="penalty-record-template">
+                                <div class="row">
+                                    <span>
+                                        01:20
+                                    </span>
+                                    <span>
+                                        +10 hit marker
+                                    </span>
+                                </div>
+                            </template>
+                            
+                            <script>
+                                var i = 0;
+                                function addPoints() {
+                                    i+=12;
+                                    document.getElementById('inc').value = i;
+                                }
+                            </script>
+
+                            <script>
+                                var i = 0;
+                                function removePoints() {
+                                    i-=12;
+                                    document.getElementById('inc').value = i;
+                                }
+                            </script>
+
+                            <div class="row flag">
+                                <span>
+                                    penalty 1
+                                </span>
+                                <span>
+                                    <button onclick="addPoints(12);" >
+                                        add
+                                    </button>
+                                    <span data-type="count" class="count">
+                                        12
+                                    </span>
+                                    <button onclick="removePoints();">
+                                        remove
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="row flag">
+                                <span>
+                                    penalty 1
+                                </span>
+                                <span>
+                                    <button onclick="addPoints();" >
+                                        add
+                                    </button>
+                                    <span data-type="count" class="count">
+                                        1
+                                    </span>
+                                    <button data-type="remove" class="material-icons remove">
+                                        remove
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="row flag">
+                                <span>
+                                    penalty 1
+                                </span>
+                                <span>
+                                    <button onclick="addPoints();" >
+                                        add
+                                    </button>
+                                    <span data-type="count" class="count">
+                                        1
+                                    </span>
+                                    <button data-type="remove" class="material-icons remove">
+                                        remove
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="row flag">
+                                <span>
+                                    penalty 1
+                                </span>
+                                <span>
+                                    <button onclick="addPoints();" >
+                                        add
+                                    </button>
+                                    <span data-type="count" class="count">
+                                        1
+                                    </span>
+                                    <button data-type="remove" class="material-icons remove">
+                                        remove
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="row flag">
+                                <span>
+                                    penalty 1
+                                </span>
+                                <span>
+                                    <button onclick="addPoints();" >
+                                        add
+                                    </button>
+                                    <span data-type="count" class="count">
+                                        1
+                                    </span>
+                                    <button data-type="remove" class="material-icons remove">
+                                        remove
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="row flag">
+                                <span>
+                                    penalty 1
+                                </span>
+                                <span>
+                                    <button onclick="addPoints();" >
+                                        add
+                                    </button>
+                                    <span data-type="count" class="count">
+                                        1
+                                    </span>
+                                    <button data-type="remove" class="material-icons remove">
+                                        remove
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="row flag">
+                                <span>
+                                    penalty 1
+                                </span>
+                                <span>
+                                    <button onclick="addPoints();" >
+                                        add
+                                    </button>
+                                    <span data-type="count" class="count">
+                                        1
+                                    </span>
+                                    <button data-type="remove" class="material-icons remove">
+                                        remove
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="row flag">
+                                <span>
+                                    penalty 1
+                                </span>
+                                <span>
+                                    <button onclick="addPoints();" >
+                                        add
+                                    </button>
+                                    <span data-type="count" class="count">
+                                        1
+                                    </span>
+                                    <button data-type="remove" class="material-icons remove">
+                                        remove
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </span>
+            
+            <span class="panel" id="penalties">
+
+               
+            </span>
+            
+            <span class="panel"style="background-color: blue;" id="settings">
+
+            </span>
+        </div>
+
+        <div id="bottomBar">
+            <button class="record-panel-button" >
+                <span class="material-icons-outlined">
+                    Points
+                </span>
+            </button>
+            <button class="record-panel-button" >
+                <span class="material-icons-outlined">
+                    Scale
+                </span>
+            </button>
+            <button class="record-panel-button" >
+                <span class="material-icons-outlined">
+                    Settings
+                </span>
+            </button>
+        </div>
+        
+    </content>
     
 </body>
 </html>
