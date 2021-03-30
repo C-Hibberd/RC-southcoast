@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>South Coast - Records</title>
+    <title>South Coast</title>
 
     <link rel="stylesheet" href="resources/index.css">
-    <link rel="shortcut icon" href="resources/images/Icon.webp" type="image/x-icon">
-
+    <script language="JavaScript" type="text/javascript" src="resources/index.js"></script>
 
 </head>
 <body>
@@ -29,15 +28,7 @@
                                         <input type="text" id="inc" value="0" style="margin-bottom: 1rem;"></input>
                                     </div>
                                 </center>
-                            </span><span class="slide" id="scoreBoard-clock">
-                                <center>
-                                    <div class="points">
-                                        <h3 class="time-counter">
-                                            01:32:02
-                                        </h3>
-                                    </div>
-                                </center>
-                            </span>
+                            
                         </div>
                     </div>
 
@@ -62,35 +53,19 @@
                                     </span>
                                 </div>
                             </template>
-                            
-                            <script>
-                                var i = 0;
-                                function addPoints() {
-                                    i+=12;
-                                    document.getElementById('inc').value = i;
-                                }
-                            </script>
-
-                            <script>
-                                var i = 0;
-                                function removePoints() {
-                                    i-=12;
-                                    document.getElementById('inc').value = i;
-                                }
-                            </script>
 
                             <div class="row flag">
                                 <span>
                                     penalty 1
                                 </span>
                                 <span>
-                                    <button onclick="addPoints(12);" >
+                                    <button onclick="add12Points();">
                                         add
                                     </button>
                                     <span data-type="count" class="count">
                                         12
                                     </span>
-                                    <button onclick="removePoints();">
+                                    <button onclick="remove12Points();">
                                         remove
                                     </button>
                                 </span>
@@ -100,13 +75,13 @@
                                     penalty 1
                                 </span>
                                 <span>
-                                    <button onclick="addPoints();" >
+                                    <button onclick="add6Points();">
                                         add
                                     </button>
                                     <span data-type="count" class="count">
-                                        1
+                                        6
                                     </span>
-                                    <button data-type="remove" class="material-icons remove">
+                                    <button onclick="remove6Points();">
                                         remove
                                     </button>
                                 </span>
@@ -218,7 +193,7 @@
                
             </span>
             
-            <span class="panel"style="background-color: blue;" id="settings">
+            <span class="panel" id="settings">
 
             </span>
         </div>
@@ -242,6 +217,5 @@
         </div>
         
     </content>
-    
 </body>
 </html>
