@@ -19,6 +19,10 @@ button {
   outline: 0;
 }
 
+.Scale-class {
+  margin-top: 1.5rem;
+}
+
 .slideshow {
   width: 100%;
   height: -webkit-fit-content;
@@ -380,4 +384,4 @@ button {
 #record-container #bottomBar button:last-Child {
   border-right: 0;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=scale.css.map */

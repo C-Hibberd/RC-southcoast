@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Coast</title>
+
+    <link rel="stylesheet" href="resources/scale.css">
+    <script language="JavaScript" type="text/javascript" src="resources/index.js"></script>
+
+</head>
+<body>
+
+    <content id="record-container">
+
+        <div id="record-panel">
+            <span class="panel" id="scoreBoard">
+
+                <div class="panel-container">
+                    <div class="top-bar-tall" id="scoreBoard-top">
+                        <div class="slideshow" id="scoreBoard-panel">
+                            <span class="slide" id="scoreBoard-points">
+                                <center>
+                                    <div class="points">
+                                        <p>
+                                            Scale points: 
+                                        </p>
+                                        <input type="text" id="yuh" value="0" style="margin-bottom: 1rem;"></input>
+                                    </div>
+                                </center>
+                            
+                        </div>
+                    </div>
+
+                    <div class="scroll-list" id="scoreBoard-bottom">
+                        <div class="table3x7" id="penalty-record-target">
+                            <div class="header">
+                                <span>
+                                    Scale class
+                                </span>
+                                <span>
+                                    points given
+                                </span>
+                            </div>
+
+
+                            <div class="row flag">
+                                <span class="Scale-class">
+                                    Class 1
+                                </span>
+                                <span>
+                                    <button onclick="classValueAdd();">
+                                        add
+                                    </button>
+                                    <input id="classinput" type="number">
+                                    <button onclick="classValueRemove();">
+                                        remove
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="row flag">
+                                <span class="Scale-class">
+                                    Class 1
+                                </span>
+                                <span>
+                                    <button onclick="classValueAdd();">
+                                        add
+                                    </button>
+                                    <input id="classinput" type="number">
+                                    <button onclick="classValueRemove();">
+                                        remove
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="row flag">
+                                <span class="Scale-class">
+                                    Class 1
+                                </span>
+                                <span>
+                                    <button onclick="classValueAdd();">
+                                        add
+                                    </button>
+                                    <input id="classinput" type="number">
+                                    <button onclick="classValueRemove();">
+                                        remove
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </span>
+            
+            <span class="panel" id="penalties">
+
+               
+            </span>
+            
+            <span class="panel" id="settings">
+
+            </span>
+        </div>
+
+        <div id="bottomBar">
+            <button class="record-panel-button" >
+                <a href="index.html">
+                <span class="material-icons-outlined">
+                    Points
+                </span>
+                </a>
+            </button>
+            <button class="record-panel-button" >
+                <span class="material-icons-outlined">
+                    Scale
+                </span>
+            </button>
+            <button class="record-panel-button" >
+                <span class="material-icons-outlined">
+                    Settings
+                </span>
+            </button>
+        </div>
+        
+<script>localStorage.setItem("i", "document.getElementById("yuh").value");</script>
+
+    </content>
+</body>
+</html>

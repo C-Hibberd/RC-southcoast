@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,11 @@
     <script language="JavaScript" type="text/javascript" src="resources/index.js"></script>
 
 </head>
+
 <body>
     <content id="record-container">
+
+<script>document.getElementById("inc").value = localStorage.getItem("i");</script>
 
         <div id="record-panel">
             <span class="panel" id="scoreBoard">
@@ -28,7 +32,7 @@
                                         <input type="text" id="inc" value="0" style="margin-bottom: 1rem;"></input>
                                     </div>
                                 </center>
-                            
+
                         </div>
                     </div>
 
@@ -42,17 +46,6 @@
                                     points given
                                 </span>
                             </div>
-                            
-                            <template id="penalty-record-template">
-                                <div class="row">
-                                    <span>
-                                        01:20
-                                    </span>
-                                    <span>
-                                        +10 hit marker
-                                    </span>
-                                </div>
-                            </template>
 
                             <div class="row flag">
                                 <span>
@@ -91,7 +84,7 @@
                                     penalty 1
                                 </span>
                                 <span>
-                                    <button onclick="addPoints();" >
+                                    <button onclick="addPoints();">
                                         add
                                     </button>
                                     <span data-type="count" class="count">
@@ -107,7 +100,7 @@
                                     penalty 1
                                 </span>
                                 <span>
-                                    <button onclick="addPoints();" >
+                                    <button onclick="addPoints();">
                                         add
                                     </button>
                                     <span data-type="count" class="count">
@@ -123,7 +116,7 @@
                                     penalty 1
                                 </span>
                                 <span>
-                                    <button onclick="addPoints();" >
+                                    <button onclick="addPoints();">
                                         add
                                     </button>
                                     <span data-type="count" class="count">
@@ -139,7 +132,7 @@
                                     penalty 1
                                 </span>
                                 <span>
-                                    <button onclick="addPoints();" >
+                                    <button onclick="addPoints();">
                                         add
                                     </button>
                                     <span data-type="count" class="count">
@@ -155,7 +148,7 @@
                                     penalty 1
                                 </span>
                                 <span>
-                                    <button onclick="addPoints();" >
+                                    <button onclick="addPoints();">
                                         add
                                     </button>
                                     <span data-type="count" class="count">
@@ -171,7 +164,7 @@
                                     penalty 1
                                 </span>
                                 <span>
-                                    <button onclick="addPoints();" >
+                                    <button onclick="addPoints();">
                                         add
                                     </button>
                                     <span data-type="count" class="count">
@@ -187,35 +180,40 @@
                 </div>
 
             </span>
-            
+
             <span class="panel" id="penalties">
 
-               
+
             </span>
-            
+
             <span class="panel" id="settings">
 
             </span>
         </div>
 
         <div id="bottomBar">
-            <button class="record-panel-button" >
-                <span class="material-icons-outlined">
-                    Points
+            <button class="record-panel-button">
+  
+                    <span class="material-icons-outlined">
+                        Points
+           
                 </span>
             </button>
-            <button class="record-panel-button" >
+            <button class="record-panel-button">
+                <a href="scale.html">
                 <span class="material-icons-outlined">
                     Scale
                 </span>
+            </a>
             </button>
-            <button class="record-panel-button" >
+            <button class="record-panel-button">
                 <span class="material-icons-outlined">
                     Settings
                 </span>
             </button>
         </div>
-        
+
     </content>
 </body>
+
 </html>
