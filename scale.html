@@ -7,7 +7,7 @@
     <title>South Coast</title>
 
     <link rel="stylesheet" href="resources/scale.css">
-    <script language="JavaScript" type="text/javascript" src="resources/index.js"></script>
+    <script language="JavaScript" type="text/javascript" src="resources/scale.js"></script>
 
 </head>
 <body>
@@ -50,11 +50,11 @@
                                     Class 1
                                 </span>
                                 <span>
-                                    <button onclick="classValueAdd();">
+                                    <button onclick="classValueAdd();" onclick="saveScale();">
                                         add
                                     </button>
                                     <input id="classinput" type="number">
-                                    <button onclick="classValueRemove();">
+                                    <button onclick="classValueRemove();" onclick="saveScale();">  
                                         remove
                                     </button>
                                 </span>
@@ -64,11 +64,11 @@
                                     Class 1
                                 </span>
                                 <span>
-                                    <button onclick="classValueAdd();">
+                                    <button onclick="classValueAdd();" onclick="saveScale();">
                                         add
                                     </button>
                                     <input id="classinput" type="number">
-                                    <button onclick="classValueRemove();">
+                                    <button onclick="classValueRemove();" onclick="saveScale();">
                                         remove
                                     </button>
                                 </span>
@@ -78,11 +78,11 @@
                                     Class 1
                                 </span>
                                 <span>
-                                    <button onclick="classValueAdd();">
+                                    <button onclick="classValueAdd();" onclick="saveScale();">
                                         add
                                     </button>
                                     <input id="classinput" type="number">
-                                    <button onclick="classValueRemove();">
+                                    <button onclick="classValueRemove();" onclick="saveScale();">
                                         remove
                                     </button>
                                 </span>
@@ -117,13 +117,13 @@
                 </span>
             </button>
             <button class="record-panel-button" >
+                <a href="settings.html">
                 <span class="material-icons-outlined">
                     Settings
                 </span>
+                </a>
             </button>
         </div>
-        
-<script>localStorage.setItem("i", "document.getElementById("yuh").value");</script>
 
     </content>
 </body>

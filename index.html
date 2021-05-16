@@ -12,10 +12,8 @@
 
 </head>
 
-<body>
+<body onload="getRuleset();" onload="setRuleset();">
     <content id="record-container">
-
-<script>document.getElementById("inc").value = localStorage.getItem("i");</script>
 
         <div id="record-panel">
             <span class="panel" id="scoreBoard">
@@ -52,125 +50,125 @@
                                     penalty 1
                                 </span>
                                 <span>
-                                    <button onclick="add12Points();">
+                                    <button onclick="addPoints1();">
                                         add
                                     </button>
-                                    <span data-type="count" class="count">
+                                    <span data-type="count" class="count" id="num1">
                                         12
                                     </span>
-                                    <button onclick="remove12Points();">
+                                    <button onclick="removePoints1();">
                                         remove
                                     </button>
                                 </span>
                             </div>
                             <div class="row flag">
                                 <span>
-                                    penalty 1
+                                    penalty 2
                                 </span>
                                 <span>
-                                    <button onclick="add6Points();">
+                                    <button onclick="addPoints2();">
                                         add
                                     </button>
-                                    <span data-type="count" class="count">
+                                    <span data-type="count" class="count" id="num2">
                                         6
                                     </span>
-                                    <button onclick="remove6Points();">
+                                    <button onclick="removePoints2();">
                                         remove
                                     </button>
                                 </span>
                             </div>
                             <div class="row flag">
                                 <span>
-                                    penalty 1
+                                    penalty 3
                                 </span>
                                 <span>
-                                    <button onclick="addPoints();">
+                                    <button onclick="addPoints3();">
                                         add
                                     </button>
-                                    <span data-type="count" class="count">
-                                        1
+                                    <span data-type="count" class="count" id="num3">
+                                        6
                                     </span>
-                                    <button data-type="remove" class="material-icons remove">
+                                    <button onclick="removePoints3();">
                                         remove
                                     </button>
                                 </span>
                             </div>
                             <div class="row flag">
                                 <span>
-                                    penalty 1
+                                    penalty 4
                                 </span>
                                 <span>
-                                    <button onclick="addPoints();">
+                                    <button onclick="addPoints4();">
                                         add
                                     </button>
-                                    <span data-type="count" class="count">
-                                        1
+                                    <span data-type="count" class="count" id="num4">
+                                        6
                                     </span>
-                                    <button data-type="remove" class="material-icons remove">
+                                    <button onclick="removePoints4();">
                                         remove
                                     </button>
                                 </span>
                             </div>
                             <div class="row flag">
                                 <span>
-                                    penalty 1
+                                    penalty 5
                                 </span>
                                 <span>
-                                    <button onclick="addPoints();">
+                                    <button onclick="addPoints5();">
                                         add
                                     </button>
-                                    <span data-type="count" class="count">
-                                        1
+                                    <span data-type="count" class="count" id="num5">
+                                        6
                                     </span>
-                                    <button data-type="remove" class="material-icons remove">
+                                    <button onclick="removePoints5();">
                                         remove
                                     </button>
                                 </span>
                             </div>
                             <div class="row flag">
                                 <span>
-                                    penalty 1
+                                    penalty 6
                                 </span>
                                 <span>
-                                    <button onclick="addPoints();">
+                                    <button onclick="addPoints6();">
                                         add
                                     </button>
-                                    <span data-type="count" class="count">
-                                        1
+                                    <span data-type="count" class="count" id="num6">
+                                        6
                                     </span>
-                                    <button data-type="remove" class="material-icons remove">
+                                    <button onclick="removePoints6();">
                                         remove
                                     </button>
                                 </span>
                             </div>
                             <div class="row flag">
                                 <span>
-                                    penalty 1
+                                    penalty 7
                                 </span>
                                 <span>
-                                    <button onclick="addPoints();">
+                                    <button onclick="addPoints7();">
                                         add
                                     </button>
-                                    <span data-type="count" class="count">
-                                        1
+                                    <span data-type="count" class="count" id="num7">
+                                        6
                                     </span>
-                                    <button data-type="remove" class="material-icons remove">
+                                    <button onclick="removePoints7();">
                                         remove
                                     </button>
                                 </span>
                             </div>
                             <div class="row flag">
                                 <span>
-                                    penalty 1
+                                    penalty 8
                                 </span>
                                 <span>
-                                    <button onclick="addPoints();">
+                                    <button onclick="addPoints8();">
                                         add
                                     </button>
-                                    <span data-type="count" class="count">
-                                        1
+                                    <span data-type="count" class="count" id="num8">
+                                        6
                                     </span>
-                                    <button data-type="remove" class="material-icons remove">
+                                    <button onclick="removePoints8();">
                                         remove
                                     </button>
                                 </span>
@@ -207,13 +205,16 @@
             </a>
             </button>
             <button class="record-panel-button">
+                <a href="settings.html">
                 <span class="material-icons-outlined">
                     Settings
                 </span>
+            </a>
             </button>
         </div>
 
     </content>
+
 </body>
 
 </html>

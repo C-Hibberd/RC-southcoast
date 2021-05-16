@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="settings.css">
+    <script type="text/javascript" src="resources/settings.js"></script>
+</head>
+
+<body>
+
+
+    <content id="record-container">
+
+        <div id="record-panel">
+            <span class="panel" id="scoreBoard">
+
+                <div class="panel-container">
+                    <div class="top-bar-tall" id="scoreBoard-top">
+                        <div class="slideshow" id="scoreBoard-panel">
+                            <span class="slide" id="scoreBoard-points">
+                                <center class="settingsselect">
+                                    <p>Settings</p>
+                                    <select id="myselect">
+                                        <option value="">choose ruleset:</option>
+                                        <option value="1">RC South Coast</option>
+                                        <option value="2">SORRCA</option>
+                                        <option value="3">SORRCA Light</option>
+                                </select>
+                                <button class="bshape" onclick="rulesetValue()">select</button>
+                                </center>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </span>
+
+            <span class="panel" id="penalties">
+
+
+            </span>
+
+            <span class="panel" id="settings">
+
+            </span>
+        </div>
+
+        <div id="bottomBar">
+            <button class="record-panel-button">
+                <a href="index.html">
+                    <span class="material-icons-outlined">
+                        Points
+                    </span>
+                </a>
+            </button>
+            <button class="record-panel-button">
+                <a href="scale.html">
+                    <span class="material-icons-outlined">
+                        Scale
+                    </span>
+                </a>
+            </button>
+            <button class="record-panel-button">
+                <span class="material-icons-outlined">
+                    Settings
+                </span>
+            </button>
+        </div>
+        
+</body>
+
+</html>
